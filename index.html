@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026·供应商交流会邀请函 | 方太集团</title>
+<style>
+/* ========== CSS Variables ========== */
+:root {
+  --gold: #C9A96E;
+  --gold-dark: #B8935A;
+  --gold-light: #F5E6C8;
+  --dark-hero: #0A0E1A;
+  --dark-sec: #111827;
+  --light-warm: #FAF8F5;
+  --white: #FFFFFF;
+  --text-dark: #1A1A1A;
+  --text-mid: #666;
+  --text-light-on-dark: rgba(255,255,255,0.9);
+  --text-muted-on-dark: rgba(255,255,255,0.55);
+  --accent-red: #C0392B;
+  --font-stack: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+}
+
+/* ========== Reset & Base ========== */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; overflow: hidden; height: 100%; }
+body {
+  font-family: var(--font-stack);
+  color: var(--text-dark);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+}
+body.dark-nav { --nav-color: rgba(255,255,255,0.85); }
+body.light-nav { --nav-color: rgba(26,26,26,0.85); }
+
+/* ========== Scroll Container ========== */
+.scroll-container {
+  position: fixed;
+  inset: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ========== Page Sections ========== */
+.page {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.page-inner {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 60px 28px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ========== Fixed Navigation ========== */
+.fixed-nav {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.nav-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.35);
+  border: 1px solid rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.nav-dot::after {
+  content: attr(data-label);
+  position: absolute;
+  right: 16px; top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font-size: 12px;
+  color: #FFF;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.nav-dot:hover::after { opacity: 1; }
+.nav-dot.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  box-shadow: 0 0 8px rgba(201,169,110,0.6);
+  transform: scale(1.4);
+}
+body.light-nav .nav-dot { background: rgba(0,0,0,0.2); border-color: rgba(0,0,0,0.35); }
+body.light-nav .nav-dot.active { background: var(--gold); border-color: var(--gold); }
+body.light-nav .nav-dot::after { color: #333; }
+
+/* ========== Fixed Logo ========== */
+.fixed-logo {
+  position: fixed; top: 16px; left: 20px; z-index: 100;
+  font-size: 13px; font-weight: 700; letter-spacing: 2px;
+  opacity: 0.7; pointer-events: none;
+}
+body.dark-nav .fixed-logo { color: rgba(255,255,255,0.7); }
+body.light-nav .fixed-logo { color: rgba(26,26,26,0.6); }
+
+/* ========== SVG Icons ========== */
+.icon-svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+/* ========== Section Backgrounds ========== */
+.bg-hero {
+  background: var(--dark-hero);
+  color: var(--text-light-on-dark);
+}
+.bg-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 40%, rgba(201,169,110,0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 80% 20%, rgba(201,169,110,0.05) 0%, transparent 40%);
+  pointer-events: none;
+}
+.bg-hero .particles {
+  position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+}
+.bg-hero .particle {
+  position: absolute;
+  width: 2px; height: 2px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: floatUp linear infinite;
+  opacity: 0;
+}
+@keyframes floatUp {
+  0% { transform: translateY(100vh) scale(0); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.2; }
+  100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
+
+.bg-dark { background: var(--dark-sec); color: var(--text-light-on-dark); }
+.bg-light { background: var(--light-warm); color: var(--text-dark); }
+.bg-gold-grad {
+  background: linear-gradient(160deg, #1a1a2e 0%, #16213e 40%, #1a1a2e 100%);
+  color: var(--text-light-on-dark);
+}
+
+/* ========== Hero Section ========== */
+.hero-content { text-align: center; }
+.hero-overline {
+  font-size: clamp(10px, 2vw, 13px);
+  letter-spacing: 5px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+.hero-title {
+  font-size: clamp(36px, 8vw, 64px);
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  opacity: 0;
+  animation: fadeInUp 0.8s 0.15s ease-out forwards;
+}
+.hero-theme {
+  display: inline-block;
+  font-size: clamp(16px, 4vw, 22px);
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 4px;
+  padding: 8px 24px;
+  border: 1px solid rgba(201,169,110,0.5);
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: fadeInUp 0.8s 0.3s ease-out forwards;
+}
+.hero-date {
+  font-size: clamp(14px, 3vw, 18px);
+  color: var(--text-muted-on-dark);
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeInUp 0.8s 0.45s ease-out forwards;
+}
+
+/* Countdown */
+.countdown { display:flex; gap:clamp(8px,2vw,16px); justify-content:center; margin-bottom:48px; opacity:0; animation: fadeInUp 0.8s 0.6s ease-out forwards; }
+.cd-box {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: clamp(10px,2vw,16px) clamp(12px,3vw,20px);
+  text-align: center;
+  min-width: clamp(56px,12vw,80px);
+}
+.cd-num { font-size: clamp(24px,6vw,40px); font-weight:700; color:var(--gold); line-height:1; font-variant-numeric:tabular-nums; }
+.cd-label { font-size: clamp(10px,2vw,12px); color:var(--text-muted-on-dark); margin-top:4px; letter-spacing:1px; }
+
+/* Scroll chevron */
+.scroll-hint {
+  position: absolute; bottom: clamp(24px,5vh,48px); left: 50%; transform: translateX(-50%);
+  opacity: 0; animation: fadeInUp 0.6s 1.2s ease-out forwards;
+  transition: opacity 0.4s;
+}
+body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
+.scroll-hint .chevron {
+  width: 28px; height: 28px;
+  border-right: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+  transform: rotate(45deg);
+  margin: 0 auto;
+  animation: chevronBounce 2s ease-in-out infinite;
+}
+@keyframes chevronBounce {
+  0%, 100% { transform: rotate(45deg) translate(0,0); opacity: 0.5; }
+  50% { transform: rotate(45deg) translate(4px,4px); opacity: 1; }
+}
+@keyframes fadeInUp {
+  from { opacity:0; transform:translateY(24px); }
+  to { opacity:1; transform:translateY(0); }
+}
+
+/* ========== Section Titles ========== */
+.section-title {
+  font-size: clamp(26px, 5vw, 38px);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+.section-title-line {
+  width: 40px; height: 2px;
+  background: var(--gold);
+  margin: 0 auto 32px;
+  transition: width 0.8s ease;
+}
+.visible .section-title-line { width: 56px; }
+
+/* ========== Opening Section ========== */
+.opening-text {
+  font-size: clamp(15px, 2.5vw, 18px);
+  line-height: 2.2;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.opening-text .hl { color: var(--gold); font-weight: 600; }
+.opening-divider {
+  width: 60px; height: 1px;
+  background: var(--gold);
+  margin: 32px auto;
+  opacity: 0.5;
+}
+.opening-signature {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-muted-on-dark);
+  letter-spacing: 2px;
+}
+
+/* ========== Info Cards ========== */
+.info-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) { .info-cards { grid-template-columns: repeat(3, 1fr); } }
+
+.info-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  transition: transform 0.3s;
+}
+.info-card:hover { transform: translateY(-2px); }
+.info-card .icon-circle {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--gold-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  color: var(--gold-dark);
+}
+.info-card .card-label { font-size:12px; color:var(--text-mid); margin-bottom:4px; }
+.info-card .card-value { font-size:15px; font-weight:600; color:var(--text-dark); }
+
+.btn-primary {
+  display: block; width: 100%; max-width: 360px; margin: 0 auto;
+  padding: 14px 24px;
+  background: var(--gold);
+  color: #FFF;
+  border: none; border-radius: 8px;
+  font-size: 15px; font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer; text-align: center; text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-primary:hover { background: var(--gold-dark); }
+.btn-primary:active { transform: scale(0.97); }
+
+.parking-note { text-align:center; font-size:13px; color:var(--text-mid); margin-top:12px; }
+
+/* Venue image gallery */
+.venue-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (min-width: 768px) {
+  .venue-gallery { grid-template-columns: repeat(4, 1fr); }
+}
+.venue-card-img {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+.venue-card-img-wrap {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: #F0EDE5;
+}
+.venue-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.venue-card-name {
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ========== Agenda Section ========== */
+.agenda-list { max-width: 720px; margin: 0 auto; }
+.agenda-segment {
+  font-size: 13px;
+  color: var(--gold);
+  letter-spacing: 3px;
+  font-weight: 700;
+  padding: 16px 0 8px 0;
+  border-bottom: 1px solid rgba(201,169,110,0.2);
+  margin-bottom: 4px;
+}
+.agenda-row {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.agenda-row:last-child { border-bottom: none; }
+.agenda-col-time {
+  min-width: 72px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gold);
+  line-height: 1.5;
+  letter-spacing: 1px;
+  padding-top: 3px;
+}
+.agenda-col-body { flex: 1; }
+.agenda-row-title { font-size: 17px; font-weight: 600; color: #FFF; margin-bottom: 2px; }
+.agenda-row-loc { font-size: 14px; color: var(--gold); margin-bottom: 4px; }
+.agenda-row-loc::before {
+  content: '';
+  display: inline-block;
+  width: 14px; height: 14px;
+  margin-right: 4px;
+  vertical-align: -1px;
+  background: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='black' stroke-width='2' d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'/><circle cx='12' cy='10' r='3' fill='black'/></svg>");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='black' stroke-width='2' d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'/><circle cx='12' cy='10' r='3' fill='black'/></svg>");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+.agenda-row-desc { font-size: 14px; color: var(--text-muted-on-dark); line-height: 1.6; }
+
+/* ========== Registration ========== */
+.reg-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: clamp(28px,5vw,48px);
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
+}
+.reg-checklist {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+  margin: 24px 0;
+  text-align: left;
+  font-size: 13px;
+  color: var(--text-muted-on-dark);
+}
+@media (max-width: 400px) { .reg-checklist { grid-template-columns: 1fr; } }
+.reg-checklist li::before { content: '✓ '; color: var(--gold); font-weight:700; }
+.deadline-tag {
+  display: inline-block;
+  background: rgba(192,57,43,0.2);
+  color: #E74C3C;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 4px 14px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+/* ========== Venue Section ========== */
+.venue-tabs {
+  display: flex; gap: 8px; justify-content: center; margin-bottom: 20px;
+}
+.venue-tab {
+  padding: 10px 20px;
+  border: 1px solid #DDD;
+  background: var(--white);
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  color: var(--text-dark);
+}
+.venue-tab.active { background: var(--gold); color:#FFF; border-color:var(--gold); font-weight:600; }
+.venue-panel { display: none; }
+.venue-panel.active { display: block; animation: fadeInUp 0.4s ease-out; }
+.venue-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+.venue-card h4 { font-size:16px; margin-bottom:4px; letter-spacing:1px; }
+.venue-card .sub { font-size:13px; color:var(--text-mid); margin-bottom:16px; }
+.venue-diagram {
+  width: 100%; height: 200px;
+  background: #FAF9F7;
+  border: 2px dashed #E0D8CC;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.venue-diagram .zone {
+  position: absolute;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--gold-dark);
+  background: rgba(201,169,110,0.06);
+}
+.venue-nav-row { display: flex; gap: 8px; margin-top: 16px; }
+.venue-nav-row .btn-primary { font-size:13px; padding:10px 16px; letter-spacing:1px; }
+
+/* ========== Notice Section ========== */
+.notice-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) { .notice-cards { grid-template-columns: repeat(4, 1fr); } }
+.notice-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 28px 24px;
+  text-align: left;
+}
+.notice-card .icon-svg { display:block; margin-bottom:14px; color: var(--gold); width: 36px; height: 36px; }
+.notice-card h4 { font-size:17px; margin-bottom:10px; letter-spacing:1px; }
+.notice-card p { font-size:15px; color:var(--text-muted-on-dark); line-height:1.9; }
+.notice-highlight { color: #E74C3C; font-weight:600; }
+
+/* ========== Contact Section ========== */
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .contact-list { grid-template-columns: 1fr; max-width: 320px; }
+}
+.contact-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: clamp(24px,5vw,36px);
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+.contact-card .icon-svg { color: var(--gold); width: 36px; height: 36px; margin: 0 auto 12px; display: block; }
+.contact-card h4 { font-size:18px; font-weight:700; margin-bottom:2px; }
+.contact-card .contact-sub { font-size:12px; color:var(--text-mid); margin-bottom:12px; }
+.contact-phone {
+  display: block;
+  font-size: 18px; font-weight: 700; color: var(--gold);
+  text-decoration: none; letter-spacing: 2px;
+  transition: opacity 0.2s;
+  margin-bottom: 12px;
+}
+.contact-phone:hover { opacity: 0.7; }
+.btn-call {
+  display: inline-block;
+  padding: 8px 28px;
+  background: var(--gold);
+  color: #FFF;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: background 0.2s;
+}
+.btn-call:hover { background: var(--gold-dark); }
+.btn-call:active { transform: scale(0.96); }
+
+/* ========== Footer ========== */
+.footer { padding: 40px 24px 48px; text-align: center; }
+.footer .brand { font-size:14px; font-weight:600; letter-spacing:2px; color:var(--text-dark); }
+.footer .dept { font-size:12px; color:var(--text-mid); margin-top:4px; }
+.footer .tagline { font-size:12px; color:#BBB; margin-top:12px; letter-spacing:2px; }
+
+/* ========== Animation Triggers ========== */
+.page .page-inner > * {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.page.visible .page-inner > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+.page.visible .page-inner > *:nth-child(1) { transition-delay: 0s; }
+.page.visible .page-inner > *:nth-child(2) { transition-delay: 0.1s; }
+.page.visible .page-inner > *:nth-child(3) { transition-delay: 0.2s; }
+.page.visible .page-inner > *:nth-child(4) { transition-delay: 0.3s; }
+.page.visible .page-inner > *:nth-child(5) { transition-delay: 0.4s; }
+
+/* Hero always visible (its own intro animation) */
+.page.bg-hero .page-inner > * { opacity:0; }
+.page.bg-hero.visible .page-inner > * { opacity:1; }
+
+/* ========== Responsive: Mobile Nav Dots ========== */
+@media (max-width: 767px) {
+  .fixed-nav {
+    top: auto; bottom: 16px; right: 50%;
+    transform: translateX(50%);
+    flex-direction: row;
+    gap: 10px;
+    background: rgba(0,0,0,0.5);
+    padding: 8px 16px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+  }
+  body.light-nav .fixed-nav { background: rgba(0,0,0,0.15); }
+  .nav-dot::after { display: none; }
+  .fixed-logo { top: 12px; left: 16px; font-size: 11px; }
+}
+
+/* ========== Reduced Motion ========== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .page .page-inner > * { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body class="dark-nav">
+
+<!-- ====== Fixed Navigation ====== -->
+<nav class="fixed-nav" id="navDots" aria-label="页面导航"></nav>
+<div class="fixed-logo">FOTILE 方太</div>
+
+<!-- ====== Scroll Container ====== -->
+<div class="scroll-container" id="scrollContainer">
+
+  <!-- ====== 1. Hero 封面 ====== -->
+  <section class="page bg-hero visible" id="page-hero">
+    <div class="particles" id="particles"></div>
+    <div class="page-inner hero-content">
+      <div class="hero-overline">FOTILE SUPPLIER CONFERENCE</div>
+      <h1 class="hero-title">2026·供应商交流会</h1>
+      <div class="hero-theme">穿越周期 · 破局共生</div>
+      <div class="hero-date">2026.08.21 &nbsp;|&nbsp; 中国·宁波</div>
+      <div class="countdown" id="countdown">
+        <div class="cd-box"><div class="cd-num" id="cd-days">00</div><div class="cd-label">天</div></div>
+        <div class="cd-box"><div class="cd-num" id="cd-hours">00</div><div class="cd-label">时</div></div>
+        <div class="cd-box"><div class="cd-num" id="cd-mins">00</div><div class="cd-label">分</div></div>
+        <div class="cd-box"><div class="cd-num" id="cd-secs">00</div><div class="cd-label">秒</div></div>
+      </div>
+    </div>
+    <div class="scroll-hint"><div class="chevron"></div></div>
+  </section>
+
+  <!-- ====== 2. 开篇致辞 ====== -->
+  <section class="page bg-dark" id="page-opening">
+    <div class="page-inner">
+      <div class="section-title" style="color:#FFF;">致尊敬的供应商伙伴</div>
+      <div class="section-title-line"></div>
+      <div class="opening-text">
+        <p>诚挚感谢贵司长期以来对<span class="hl">方太集团</span>的信任与支持。</p>
+        <p style="margin-top:16px;">为深化战略合作、共话行业趋势，兹定于<span class="hl">2026年8月21日</span>举办<span class="hl">方太集团2026年供应商交流会</span>。</p>
+        <p style="margin-top:16px;">本次会议以<span class="hl">"穿越周期，破局共生"</span>为主题，旨在凝聚共识、共谋发展，携手开创合作新篇章。</p>
+        <p style="margin-top:16px;">谨此诚邀，恭候尊驾。</p>
+      </div>
+      <div class="opening-divider"></div>
+      <div class="opening-signature">方太集团 · 采购管理部</div>
+    </div>
+  </section>
+
+  <!-- ====== 3. 会议信息 ====== -->
+  <section class="page bg-light" id="page-info" style="align-items:flex-start;padding-top:40px;">
+    <div class="page-inner">
+      <div class="section-title">会议信息</div>
+      <div class="section-title-line"></div>
+
+      <!-- 会议主题 -->
+      <div style="text-align:center;margin-bottom:24px;">
+        <div style="font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:4px;">THEME</div>
+        <div style="font-size:clamp(20px,4vw,28px);font-weight:700;letter-spacing:2px;">穿越周期 · 破局共生</div>
+      </div>
+
+      <!-- 会场平面图 -->
+      <div style="margin-bottom:24px;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+          <div style="width:4px;height:18px;background:var(--gold);border-radius:2px;"></div>
+          <span style="font-size:16px;font-weight:700;">会场平面图</span>
+        </div>
+        <img src="image/pingmiantu.png" alt="会场平面图" style="width:100%;max-width:600px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:block;" loading="lazy">
+      </div>
+
+      <!-- 时间信息 -->
+      <div style="text-align:center;margin-bottom:32px;padding:16px;background:var(--white);border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
+        <div style="font-size:13px;color:var(--text-mid);margin-bottom:8px;">签到 & 会议时间</div>
+        <div style="font-size:clamp(16px,3vw,20px);font-weight:600;">
+          签到 8:30 &nbsp;|&nbsp; 会议 9:00 - 17:00
+        </div>
+        <div style="font-size:13px;color:var(--text-mid);margin-top:4px;">2026年8月21日（周四）</div>
+      </div>
+
+      <!-- 主会场 -->
+      <div style="margin-bottom:28px;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+          <div style="width:4px;height:18px;background:var(--gold);border-radius:2px;"></div>
+          <span style="font-size:16px;font-weight:700;">主会场</span>
+        </div>
+        <div style="background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
+          <img src="image/youdaoRoom.jpg" alt="有道讲堂" style="width:100%;display:block;" loading="lazy">
+          <div style="padding:12px 16px;text-align:center;font-weight:600;font-size:15px;">有道讲堂</div>
+        </div>
+      </div>
+
+      <!-- 分会场 -->
+      <div style="margin-bottom:28px;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+          <div style="width:4px;height:18px;background:var(--gold);border-radius:2px;"></div>
+          <span style="font-size:16px;font-weight:700;">分会场</span>
+        </div>
+        <div class="venue-gallery">
+          <div class="venue-card-img">
+            <div class="venue-card-img-wrap"><img src="image/meetingroom101-103.png" alt="会议室101-103" loading="lazy"></div>
+            <div class="venue-card-name">会议室 101-103</div>
+          </div>
+          <div class="venue-card-img">
+            <div class="venue-card-img-wrap"><img src="image/wendaoRoom.png" alt="问道室" loading="lazy"></div>
+            <div class="venue-card-name">问道室</div>
+          </div>
+          <div class="venue-card-img">
+            <div class="venue-card-img-wrap"><img src="image/teaRoom.png" alt="茶道室" loading="lazy"></div>
+            <div class="venue-card-name">茶道室</div>
+          </div>
+          <div class="venue-card-img">
+            <div class="venue-card-img-wrap"><img src="image/bookRoom.png" alt="藏书阁" loading="lazy"></div>
+            <div class="venue-card-name">藏书阁</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 导航按钮 -->
+      <a class="btn-primary" href="https://uri.amap.com/navigation?to=121.53,30.35,浙江省宁波市慈溪市杭湾书院" target="_blank" rel="noopener" style="margin-bottom:20px;">
+        一键导航至会场（杭湾书院）
+      </a>
+
+      <!-- 停车说明 -->
+      <div style="background:var(--white);border-radius:12px;padding:20px;box-shadow:0 2px 12px rgba(0,0,0,0.04);margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+          <svg class="icon-svg" viewBox="0 0 24 24" style="color:var(--gold);width:20px;height:20px;"><rect x="3" y="2" width="18" height="20" rx="2"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/><line x1="9" y1="15" x2="12" y2="15"/></svg>
+          <span style="font-weight:700;font-size:15px;">停车指引</span>
+        </div>
+        <div style="font-size:14px;line-height:2;color:var(--text-dark);">
+          <p><strong>停车地点：</strong>幸福里地下车库（免费停车，凭参会邀请函进出）</p>
+          <p><strong>自驾路线：</strong>导航搜索<span style="color:var(--gold);font-weight:600;">「幸福里-浙江省宁波市慈溪市庵东镇海轩路27号」</span>，沿指引牌行驶至地下车库</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 4. 会议议程 ====== -->
+  <section class="page bg-dark" id="page-agenda" style="align-items:flex-start;padding-top:40px;">
+    <div class="page-inner">
+      <div class="section-title" style="color:#FFF;">会议议程</div>
+      <div class="section-title-line"></div>
+      <div style="text-align:center;margin-bottom:28px;font-size:15px;color:var(--text-muted-on-dark);">
+        会议主持：<span style="color:var(--gold);font-weight:600;">朱文涛</span> &nbsp;|&nbsp; 2026年8月21日 &nbsp;|&nbsp; 杭湾书院
+      </div>
+      <div class="agenda-list">
+        <!-- 上午 -->
+        <div class="agenda-segment">上午</div>
+        <div class="agenda-row">
+          <div class="agenda-col-time">09:00<br>|<br>11:00</div>
+          <div class="agenda-col-body">
+            <div class="agenda-row-title">供应商签到</div>
+            <div class="agenda-row-loc">杭湾书院 · 签到区</div>
+            <div class="agenda-row-desc">供应商签到、自由交流</div>
+          </div>
+        </div>
+        <!-- 中午 -->
+        <div class="agenda-segment">中午</div>
+        <div class="agenda-row">
+          <div class="agenda-col-time">11:00<br>|<br>13:00</div>
+          <div class="agenda-col-body">
+            <div class="agenda-row-title">午餐</div>
+            <div class="agenda-row-loc">幸福里酒店 · 餐厅</div>
+            <div class="agenda-row-desc">自助餐、自由交流</div>
+          </div>
+        </div>
+        <!-- 下午 -->
+        <div class="agenda-segment">下午</div>
+        <div class="agenda-row">
+          <div class="agenda-col-time">13:00<br>|<br>15:30</div>
+          <div class="agenda-col-body">
+            <div class="agenda-row-title">分场研讨</div>
+            <div class="agenda-row-loc">杭湾书院 · 会议室</div>
+            <div class="agenda-row-desc">企业高层与供应商代表分组六大分会场深度对话</div>
+          </div>
+        </div>
+        <div class="agenda-row">
+          <div class="agenda-col-time">15:30<br>|<br>15:50</div>
+          <div class="agenda-col-body">
+            <div class="agenda-row-title">茶歇</div>
+            <div class="agenda-row-loc">杭湾书院 · 休息区</div>
+            <div class="agenda-row-desc">茶歇及自由交流、展区参观</div>
+          </div>
+        </div>
+        <div class="agenda-row">
+          <div class="agenda-col-time">15:50<br>|<br>16:00</div>
+          <div class="agenda-col-body">
+            <div class="agenda-row-title">主会场入场</div>
+            <div class="agenda-row-loc">杭湾书院 · 有道讲堂</div>
+            <div class="agenda-row-desc">主会场入场</div>
+          </div>
+        </div>
+        <div class="agenda-row">
+          <div class="agenda-col-time">16:00<br>|<br>16:20</div>
+          <div class="agenda-col-body">
+            <div class="agenda-row-title">供应链工作规划</div>
+            <div class="agenda-row-loc">杭湾书院 · 有道讲堂</div>
+            <div class="agenda-row-desc">回顾半年度合作成果，年度战略方向与供应链规划发布</div>
+          </div>
+        </div>
+        <div class="agenda-row">
+          <div class="agenda-col-time">16:20<br>|<br>16:40</div>
+          <div class="agenda-col-body">
+            <div class="agenda-row-title">研发规划暨会议总结</div>
+            <div class="agenda-row-loc">杭湾书院 · 有道讲堂</div>
+            <div class="agenda-row-desc">研发规划发布、会议总结</div>
+          </div>
+        </div>
+        <div class="agenda-row">
+          <div class="agenda-col-time">17:00<br>|<br>19:00</div>
+          <div class="agenda-col-body">
+            <div class="agenda-row-title">晚餐</div>
+            <div class="agenda-row-loc">幸福里酒店 · 餐厅</div>
+            <div class="agenda-row-desc">晚宴、自由交流</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 5. 参会须知 ====== -->
+  <section class="page bg-dark" id="page-notice">
+    <div class="page-inner">
+      <div class="section-title" style="color:#FFF;">参会须知</div>
+      <div class="section-title-line"></div>
+      <div class="notice-cards">
+        <div class="notice-card">
+          <svg class="icon-svg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <h4>参会人员要求</h4>
+          <p>请贵司至少安排<span class="notice-highlight">一位高级管理人员</span>到场，具体为<span class="notice-highlight">董事长或总经理</span>。如无法出席或参会人员变更，须提前与会务组沟通。会议期间请着<span class="notice-highlight">商务正装或商务休闲装</span>，展现企业专业形象。</p>
+        </div>
+        <div class="notice-card">
+          <svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <h4>住宿安排</h4>
+          <p>会议<span class="notice-highlight">不统一安排住宿</span>。如需提前一天（<span class="notice-highlight">8月20日晚</span>）入住，报名时可选择是否预订幸福里酒店，以便为您预留房间，<span class="notice-highlight">费用自理</span>（标准间<span class="notice-highlight">298元/晚</span>）。抵达时直接在酒店前台办理入住。</p>
+        </div>
+        <div class="notice-card">
+          <svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <h4>费用说明</h4>
+          <p>本次会议<span class="notice-highlight">不收取任何参会费用</span>。会议期间的<span class="notice-highlight">餐饮、茶歇由主办方提供</span>。交通及住宿费用需参会代表自理。</p>
+        </div>
+        <div class="notice-card">
+          <svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <h4>报名截止</h4>
+          <p>请于<span class="notice-highlight">2026年7月31日前</span>完成报名回执提交。逾期提交请及时<span class="notice-highlight">联系会务组</span>。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 6. 参会报名 ====== -->
+  <section class="page bg-gold-grad" id="page-register">
+    <div class="page-inner">
+      <div class="section-title" style="color:#FFF;">参会报名</div>
+      <div class="section-title-line"></div>
+      <div class="reg-card">
+        <div style="font-size:17px;font-weight:600;margin-bottom:4px;">请于以下时间前完成报名</div>
+        <div class="deadline-tag">2026年7月31日 截止</div>
+        <div style="font-size:14px;color:var(--text-muted-on-dark);margin-bottom:16px;">填写以下信息完成报名回执</div>
+        <ul class="reg-checklist">
+          <li>公司名称（全称）</li>
+          <li>到场负责人姓名</li>
+          <li>到场负责人职位</li>
+          <li>负责人手机号</li>
+          <li>参会人数</li>
+          <li>用餐 / 住宿需求</li>
+        </ul>
+        <a class="btn-primary" href="https://wj.qq.com/s2/27374146/040e/" target="_blank" rel="noopener" id="regBtn">
+          填写报名表
+        </a>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-top:16px;">数据由腾讯问卷安全收集，仅用于本次会务安排</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 7. 场地安排 ====== -->
+  <section class="page bg-light" id="page-venue">
+    <div class="page-inner">
+      <div class="section-title">场地安排</div>
+      <div class="section-title-line"></div>
+      <div class="venue-tabs">
+        <button class="venue-tab active" data-tab="main">主会场</button>
+        <button class="venue-tab" data-tab="sub">分会场</button>
+        <button class="venue-tab" data-tab="dining">餐厅</button>
+      </div>
+      <div class="venue-panel active" data-panel="main">
+        <div class="venue-card">
+          <h4>杭湾书院 · 主会场</h4>
+          <p class="sub">供方专区 / 领导区 / 签到区</p>
+          <div class="venue-diagram">
+            <div class="zone" style="top:15%;left:15%;width:30%;height:25%;">供方专区</div>
+            <div class="zone" style="top:15%;right:15%;width:25%;height:25%;">领导区</div>
+            <div class="zone" style="top:50%;left:25%;width:50%;height:20%;">舞台 / 屏幕</div>
+            <div class="zone" style="bottom:15%;left:35%;width:30%;height:18%;">签到区</div>
+          </div>
+        </div>
+      </div>
+      <div class="venue-panel" data-panel="sub">
+        <div class="venue-card">
+          <h4>杭湾书院 · 分会场</h4>
+          <p class="sub">各分会场会议室及分组安排</p>
+          <div class="venue-diagram">
+            <div class="zone" style="top:10%;left:8%;width:38%;height:35%;">分会场 A<br><small>品质专题</small></div>
+            <div class="zone" style="top:10%;right:8%;width:38%;height:35%;">分会场 B<br><small>成本专题</small></div>
+            <div class="zone" style="bottom:12%;left:8%;width:38%;height:35%;">分会场 C<br><small>交付专题</small></div>
+            <div class="zone" style="bottom:12%;right:8%;width:38%;height:35%;">分会场 D<br><small>技术专题</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="venue-panel" data-panel="dining">
+        <div class="venue-card">
+          <h4>幸福里酒店 · 餐厅</h4>
+          <p class="sub">餐厅楼层 / 区域 / 桌号安排</p>
+          <div class="venue-diagram">
+            <div class="zone" style="top:20%;left:10%;width:35%;height:60%;">用餐区<br><small>桌号 1-15</small></div>
+            <div class="zone" style="top:20%;right:10%;width:35%;height:60%;">用餐区<br><small>桌号 16-30</small></div>
+          </div>
+          <div class="venue-nav-row">
+            <a class="btn-primary" href="https://uri.amap.com/navigation?to=121.53,30.35,浙江省宁波市慈溪市幸福里酒店" target="_blank" rel="noopener" style="flex:1;max-width:none;">导航至酒店</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 8. 会务联络 ====== -->
+  <section class="page bg-light" id="page-contact">
+    <div class="page-inner">
+      <div class="section-title">会务联络</div>
+      <div class="section-title-line"></div>
+      <p style="text-align:center;font-size:14px;color:var(--text-mid);margin-bottom:28px;">如有疑问，欢迎随时联系会务组</p>
+      <div class="contact-list">
+        <div class="contact-card">
+          <svg class="icon-svg" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <h4>王 工</h4>
+          <div class="contact-sub">会务联系人</div>
+          <a class="contact-phone" href="tel:13566070860">135 6607 0860</a>
+          <a class="btn-call" href="tel:13566070860">一键拨号</a>
+        </div>
+        <div class="contact-card">
+          <svg class="icon-svg" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <h4>黄经理</h4>
+          <div class="contact-sub">会务联系人</div>
+          <a class="contact-phone" href="tel:15988632027">159 8863 2027</a>
+          <a class="btn-call" href="tel:15988632027">一键拨号</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 9. 页脚 ====== -->
+  <section class="page bg-light" id="page-footer" style="min-height:auto;">
+    <div class="footer">
+      <div class="brand">方太集团 · 采购管理部</div>
+      <div class="dept">FOTILE GROUP · Procurement Department</div>
+      <div class="tagline">穿越周期 · 破局共生</div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ====== JavaScript ====== -->
+<script>
+(function() {
+  var scrollCnt = document.getElementById('scrollContainer');
+  var pages = document.querySelectorAll('.page');
+  var navDots = document.getElementById('navDots');
+  var body = document.body;
+
+  // ====== Create nav dots ======
+  var labels = ['封面','致辞','信息','议程','须知','报名','场地','联络'];
+  pages.forEach(function(p, i) {
+    if (i >= labels.length) return;
+    var dot = document.createElement('span');
+    dot.className = 'nav-dot';
+    dot.setAttribute('data-label', labels[i]);
+    dot.setAttribute('data-index', i);
+    dot.addEventListener('click', function() {
+      pages[i].scrollIntoView({ behavior: 'smooth' });
+    });
+    navDots.appendChild(dot);
+  });
+
+  // ====== Particles ======
+  var pContainer = document.getElementById('particles');
+  if (pContainer) {
+    for (var i = 0; i < 40; i++) {
+      var p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left = Math.random() * 100 + '%';
+      p.style.animationDuration = (Math.random() * 6 + 4) + 's';
+      p.style.animationDelay = Math.random() * 5 + 's';
+      p.style.width = p.style.height = (Math.random() * 2 + 1) + 'px';
+      pContainer.appendChild(p);
+    }
+  }
+
+  // ====== Countdown ======
+  var target = new Date('2026-08-21T08:30:00+08:00');
+  function updateCountdown() {
+    var now = new Date();
+    var diff = target - now;
+    var daysEl = document.getElementById('cd-days');
+    var hoursEl = document.getElementById('cd-hours');
+    var minsEl = document.getElementById('cd-mins');
+    var secsEl = document.getElementById('cd-secs');
+
+    if (diff <= 0) {
+      if (daysEl) daysEl.textContent = '--';
+      if (hoursEl) hoursEl.textContent = '--';
+      if (minsEl) minsEl.textContent = '--';
+      if (secsEl) secsEl.textContent = '--';
+      return;
+    }
+
+    var d = Math.floor(diff / 86400000);
+    var h = Math.floor((diff % 86400000) / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var s = Math.floor((diff % 60000) / 1000);
+
+    if (daysEl) daysEl.textContent = String(d).padStart(2, '0');
+    if (hoursEl) hoursEl.textContent = String(h).padStart(2, '0');
+    if (minsEl) minsEl.textContent = String(m).padStart(2, '0');
+    if (secsEl) secsEl.textContent = String(s).padStart(2, '0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // ====== Intersection Observer ======
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+
+        // Update active dot
+        var idx = Array.from(pages).indexOf(entry.target);
+        var dots = document.querySelectorAll('.nav-dot');
+        dots.forEach(function(d, i) {
+          d.classList.toggle('active', i === idx);
+        });
+
+        // Toggle nav color based on section background
+        if (entry.target.classList.contains('bg-light')) {
+          body.classList.remove('dark-nav');
+          body.classList.add('light-nav');
+        } else {
+          body.classList.remove('light-nav');
+          body.classList.add('dark-nav');
+        }
+      }
+    });
+  }, { threshold: 0.3 });
+
+  pages.forEach(function(p) { observer.observe(p); });
+
+  // ====== Scroll Hint ======
+  scrollCnt.addEventListener('scroll', function() {
+    if (scrollCnt.scrollTop > 100) {
+      body.classList.add('scrolled');
+    }
+  }, { once: false });
+
+  // ====== Venue Tabs ======
+  document.querySelectorAll('.venue-tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var target = this.getAttribute('data-tab');
+      document.querySelectorAll('.venue-tab').forEach(function(t) { t.classList.remove('active'); });
+      this.classList.add('active');
+      document.querySelectorAll('.venue-panel').forEach(function(p) { p.classList.remove('active'); });
+      var panel = document.querySelector('[data-panel="' + target + '"]');
+      if (panel) panel.classList.add('active');
+    });
+  });
+
+  // ====== Deadline Check ======
+  var deadline = new Date('2026-07-31T23:59:59+08:00');
+  if (new Date() > deadline) {
+    var btn = document.getElementById('regBtn');
+    if (btn) {
+      btn.style.background = '#999';
+      btn.style.pointerEvents = 'none';
+      btn.textContent = '报名已截止';
+    }
+    var tags = document.querySelectorAll('.deadline-tag');
+    tags.forEach(function(t) { t.textContent = '报名已截止'; });
+  }
+
+  // ====== Parallax (lightweight) ======
+  var heroSection = document.getElementById('page-hero');
+  var ticking = false;
+  scrollCnt.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        if (heroSection) {
+          var scroll = scrollCnt.scrollTop;
+          var heroBg = heroSection.querySelector('::before');
+          if (scroll < window.innerHeight) {
+            var offset = scroll * 0.3;
+            heroSection.style.backgroundPositionY = offset + 'px';
+          }
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+})();
+</script>
+</body>
+</html>
