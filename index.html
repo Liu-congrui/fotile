@@ -465,24 +465,19 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
 }
 .venue-card h4 { font-size:16px; margin-bottom:4px; letter-spacing:1px; }
 .venue-card .sub { font-size:13px; color:var(--text-mid); margin-bottom:16px; }
-.venue-diagram {
-  width: 100%; height: 200px;
-  background: #FAF9F7;
-  border: 2px dashed #E0D8CC;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
-}
-.venue-diagram .zone {
-  position: absolute;
-  border: 1px solid var(--gold);
-  border-radius: 4px;
+.venue-notice {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
-  color: var(--gold-dark);
-  background: rgba(201,169,110,0.06);
+  text-align: center;
+  padding: 40px 20px;
+  background: #FAF9F7;
+  border-radius: 8px;
+  border: 2px dashed #E0D8CC;
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.8;
 }
 .venue-nav-row { display: flex; gap: 8px; margin-top: 16px; }
 .venue-nav-row .btn-primary { font-size:13px; padding:10px 16px; letter-spacing:1px; }
@@ -888,11 +883,12 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
         <div class="venue-card">
           <h4>杭湾书院 · 主会场</h4>
           <p class="sub">供方专区 / 领导区 / 签到区</p>
-          <div class="venue-diagram">
-            <div class="zone" style="top:15%;left:15%;width:30%;height:25%;">供方专区</div>
-            <div class="zone" style="top:15%;right:15%;width:25%;height:25%;">领导区</div>
-            <div class="zone" style="top:50%;left:25%;width:50%;height:20%;">舞台 / 屏幕</div>
-            <div class="zone" style="bottom:15%;left:35%;width:30%;height:18%;">签到区</div>
+          <div class="venue-notice">
+            <svg class="icon-svg" viewBox="0 0 24 24" style="width:32px;height:32px;color:var(--gold);margin-bottom:8px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>具体场地安排将于报名结束后统一分配，敬请关注后续通知</span>
+          </div>
+          <div class="venue-nav-row">
+            <a class="btn-primary" href="https://uri.amap.com/navigation?to=121.53,30.35,浙江省宁波市慈溪市杭湾书院" target="_blank" rel="noopener">导航至主 / 分会场</a>
           </div>
         </div>
       </div>
@@ -900,11 +896,12 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
         <div class="venue-card">
           <h4>杭湾书院 · 分会场</h4>
           <p class="sub">各分会场会议室及分组安排</p>
-          <div class="venue-diagram">
-            <div class="zone" style="top:10%;left:8%;width:38%;height:35%;">分会场 A<br><small>品质专题</small></div>
-            <div class="zone" style="top:10%;right:8%;width:38%;height:35%;">分会场 B<br><small>成本专题</small></div>
-            <div class="zone" style="bottom:12%;left:8%;width:38%;height:35%;">分会场 C<br><small>交付专题</small></div>
-            <div class="zone" style="bottom:12%;right:8%;width:38%;height:35%;">分会场 D<br><small>技术专题</small></div>
+          <div class="venue-notice">
+            <svg class="icon-svg" viewBox="0 0 24 24" style="width:32px;height:32px;color:var(--gold);margin-bottom:8px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>具体场地安排将于报名结束后统一分配，敬请关注后续通知</span>
+          </div>
+          <div class="venue-nav-row">
+            <a class="btn-primary" href="https://uri.amap.com/navigation?to=121.53,30.35,浙江省宁波市慈溪市杭湾书院" target="_blank" rel="noopener">导航至主 / 分会场</a>
           </div>
         </div>
       </div>
@@ -912,12 +909,12 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
         <div class="venue-card">
           <h4>幸福里酒店 · 餐厅</h4>
           <p class="sub">餐厅楼层 / 区域 / 桌号安排</p>
-          <div class="venue-diagram">
-            <div class="zone" style="top:20%;left:10%;width:35%;height:60%;">用餐区<br><small>桌号 1-15</small></div>
-            <div class="zone" style="top:20%;right:10%;width:35%;height:60%;">用餐区<br><small>桌号 16-30</small></div>
+          <div class="venue-notice">
+            <svg class="icon-svg" viewBox="0 0 24 24" style="width:32px;height:32px;color:var(--gold);margin-bottom:8px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>具体场地安排将于报名结束后统一分配，敬请关注后续通知</span>
           </div>
           <div class="venue-nav-row">
-            <a class="btn-primary" href="https://uri.amap.com/navigation?to=121.53,30.35,浙江省宁波市慈溪市幸福里酒店" target="_blank" rel="noopener" style="flex:1;max-width:none;">导航至酒店</a>
+            <a class="btn-primary" href="https://uri.amap.com/navigation?to=121.53,30.35,浙江省宁波市慈溪市幸福里酒店" target="_blank" rel="noopener">导航至幸福里酒店</a>
           </div>
         </div>
       </div>
