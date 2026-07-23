@@ -62,7 +62,7 @@ body.light-nav { --nav-color: rgba(26,26,26,0.85); }
   width: 100%;
   max-width: 840px;
   margin: 0 auto;
-  padding: 60px 28px;
+  padding: 40px 20px;
   position: relative;
   z-index: 2;
 }
@@ -162,56 +162,57 @@ body.light-nav .fixed-logo { color: rgba(26,26,26,0.6); }
 /* ========== Hero Section ========== */
 .hero-content { text-align: center; }
 .hero-overline {
-  font-size: clamp(10px, 2vw, 13px);
-  letter-spacing: 5px;
+  font-size: clamp(9px, 1.8vw, 12px);
+  letter-spacing: 4px;
   color: var(--gold);
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   opacity: 0;
   animation: fadeInUp 0.8s ease-out forwards;
 }
 .hero-title {
-  font-size: clamp(36px, 8vw, 64px);
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 1.2;
+  font-size: clamp(20px, 5vw, 32px);
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 1.3;
   margin-bottom: 16px;
   opacity: 0;
   animation: fadeInUp 0.8s 0.15s ease-out forwards;
+  color: var(--text-muted-on-dark);
 }
 .hero-theme {
   display: inline-block;
-  font-size: clamp(16px, 4vw, 22px);
+  font-size: clamp(28px, 7vw, 48px);
   color: var(--gold);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 4px;
   padding: 8px 24px;
   border: 1px solid rgba(201,169,110,0.5);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   opacity: 0;
   animation: fadeInUp 0.8s 0.3s ease-out forwards;
 }
 .hero-date {
-  font-size: clamp(14px, 3vw, 18px);
+  font-size: clamp(12px, 2.5vw, 16px);
   color: var(--text-muted-on-dark);
-  letter-spacing: 3px;
-  margin-bottom: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
   opacity: 0;
   animation: fadeInUp 0.8s 0.45s ease-out forwards;
 }
 
 /* Countdown */
-.countdown { display:flex; gap:clamp(8px,2vw,16px); justify-content:center; margin-bottom:48px; opacity:0; animation: fadeInUp 0.8s 0.6s ease-out forwards; }
+.countdown { display:flex; gap:clamp(6px,2vw,12px); justify-content:center; margin-bottom:36px; opacity:0; animation: fadeInUp 0.8s 0.6s ease-out forwards; }
 .cd-box {
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: 8px;
-  padding: clamp(10px,2vw,16px) clamp(12px,3vw,20px);
+  padding: clamp(8px,2vw,12px) clamp(10px,2.5vw,16px);
   text-align: center;
-  min-width: clamp(56px,12vw,80px);
+  min-width: clamp(48px,10vw,64px);
 }
-.cd-num { font-size: clamp(24px,6vw,40px); font-weight:700; color:var(--gold); line-height:1; font-variant-numeric:tabular-nums; }
-.cd-label { font-size: clamp(10px,2vw,12px); color:var(--text-muted-on-dark); margin-top:4px; letter-spacing:1px; }
+.cd-num { font-size: clamp(20px,5vw,32px); font-weight:700; color:var(--gold); line-height:1; font-variant-numeric:tabular-nums; }
+.cd-label { font-size: clamp(9px,1.5vw,11px); color:var(--text-muted-on-dark); margin-top:3px; letter-spacing:1px; }
 
 /* Scroll chevron */
 .scroll-hint {
@@ -239,24 +240,24 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
 
 /* ========== Section Titles ========== */
 .section-title {
-  font-size: clamp(26px, 5vw, 38px);
+  font-size: clamp(22px, 4vw, 30px);
   font-weight: 700;
   text-align: center;
   letter-spacing: 2px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 .section-title-line {
   width: 40px; height: 2px;
   background: var(--gold);
-  margin: 0 auto 32px;
+  margin: 0 auto 24px;
   transition: width 0.8s ease;
 }
 .visible .section-title-line { width: 56px; }
 
 /* ========== Opening Section ========== */
 .opening-text {
-  font-size: clamp(15px, 2.5vw, 18px);
-  line-height: 2.2;
+  font-size: clamp(13px, 2vw, 15px);
+  line-height: 2;
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
@@ -359,39 +360,38 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
 /* ========== Agenda Section ========== */
 .agenda-list { max-width: 720px; margin: 0 auto; }
 .agenda-segment {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--gold);
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: 700;
-  padding: 16px 0 8px 0;
+  padding: 10px 0 6px 0;
   border-bottom: 1px solid rgba(201,169,110,0.2);
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 .agenda-row {
-  display: flex; gap: 16px; align-items: flex-start;
-  padding: 14px 0;
+  display: flex; gap: 10px; align-items: center;
+  padding: 6px 0;
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 .agenda-row:last-child { border-bottom: none; }
 .agenda-col-time {
-  min-width: 72px;
+  min-width: 80px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--gold);
-  line-height: 1.5;
+  line-height: 1.3;
   letter-spacing: 1px;
-  padding-top: 3px;
 }
-.agenda-col-body { flex: 1; }
-.agenda-row-title { font-size: 17px; font-weight: 600; color: #FFF; margin-bottom: 2px; }
-.agenda-row-loc { font-size: 14px; color: var(--gold); margin-bottom: 4px; }
+.agenda-col-body { flex: 1; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.agenda-row-title { font-size: 14px; font-weight: 600; color: #FFF; }
+.agenda-row-loc { font-size: 12px; color: var(--gold); }
 .agenda-row-loc::before {
   content: '';
   display: inline-block;
-  width: 14px; height: 14px;
-  margin-right: 4px;
-  vertical-align: -1px;
+  width: 12px; height: 12px;
+  margin-right: 3px;
+  vertical-align: -2px;
   background: currentColor;
   -webkit-mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='black' stroke-width='2' d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'/><circle cx='12' cy='10' r='3' fill='black'/></svg>");
   -webkit-mask-size: contain;
@@ -402,7 +402,7 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
   mask-repeat: no-repeat;
   mask-position: center;
 }
-.agenda-row-desc { font-size: 14px; color: var(--text-muted-on-dark); line-height: 1.6; }
+.agenda-row-desc { display: none; }
 
 /* ========== Registration ========== */
 .reg-card {
@@ -486,7 +486,7 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
 .notice-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 12px;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -494,13 +494,13 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
 .notice-card {
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 14px;
-  padding: 28px 24px;
+  border-radius: 12px;
+  padding: 20px 16px;
   text-align: left;
 }
-.notice-card .icon-svg { display:block; margin-bottom:14px; color: var(--gold); width: 36px; height: 36px; }
-.notice-card h4 { font-size:17px; margin-bottom:10px; letter-spacing:1px; }
-.notice-card p { font-size:15px; color:var(--text-muted-on-dark); line-height:1.9; }
+.notice-card .icon-svg { display:block; margin-bottom:10px; color: var(--gold); width: 28px; height: 28px; }
+.notice-card h4 { font-size:14px; margin-bottom:6px; letter-spacing:1px; }
+.notice-card p { font-size:12px; color:var(--text-muted-on-dark); line-height:1.7; }
 .notice-highlight { color: #E74C3C; font-weight:600; }
 
 /* ========== Contact Section ========== */
@@ -615,8 +615,8 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
     <div class="particles" id="particles"></div>
     <div class="page-inner hero-content">
       <div class="hero-overline">FOTILE SUPPLIER CONFERENCE</div>
-      <h1 class="hero-title">2026·供应商交流会</h1>
       <div class="hero-theme">穿越周期 · 破局共生</div>
+      <h1 class="hero-title">2026·供应商交流会</h1>
       <div class="hero-date">2026.08.21 &nbsp;|&nbsp; 宁波·杭湾书院</div>
       <div class="countdown" id="countdown">
         <div class="cd-box"><div class="cd-num" id="cd-days">00</div><div class="cd-label">天</div></div>
@@ -669,47 +669,9 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
       <div style="text-align:center;margin-bottom:32px;padding:16px;background:var(--white);border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
         <div style="font-size:13px;color:var(--text-mid);margin-bottom:8px;">签到 & 会议时间</div>
         <div style="font-size:clamp(16px,3vw,20px);font-weight:600;">
-          签到 8:30 &nbsp;|&nbsp; 会议 9:00 - 17:00
+          签到 9:00 &nbsp;|&nbsp; 会议 9:00 - 17:00
         </div>
         <div style="font-size:13px;color:var(--text-mid);margin-top:4px;">2026年8月21日（周四）</div>
-      </div>
-
-      <!-- 主会场 -->
-      <div style="margin-bottom:28px;">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
-          <div style="width:4px;height:18px;background:var(--gold);border-radius:2px;"></div>
-          <span style="font-size:16px;font-weight:700;">主会场</span>
-        </div>
-        <div style="background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
-          <img src="image/youdaoRoom.jpg" alt="有道讲堂" style="width:100%;display:block;" loading="lazy">
-          <div style="padding:12px 16px;text-align:center;font-weight:600;font-size:15px;">有道讲堂</div>
-        </div>
-      </div>
-
-      <!-- 分会场 -->
-      <div style="margin-bottom:28px;">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
-          <div style="width:4px;height:18px;background:var(--gold);border-radius:2px;"></div>
-          <span style="font-size:16px;font-weight:700;">分会场</span>
-        </div>
-        <div class="venue-gallery">
-          <div class="venue-card-img">
-            <div class="venue-card-img-wrap"><img src="image/meetingroom101-103.png" alt="会议室101-103" loading="lazy"></div>
-            <div class="venue-card-name">会议室 101-103</div>
-          </div>
-          <div class="venue-card-img">
-            <div class="venue-card-img-wrap"><img src="image/wendaoRoom.png" alt="问道室" loading="lazy"></div>
-            <div class="venue-card-name">问道室</div>
-          </div>
-          <div class="venue-card-img">
-            <div class="venue-card-img-wrap"><img src="image/teaRoom.png" alt="茶道室" loading="lazy"></div>
-            <div class="venue-card-name">茶道室</div>
-          </div>
-          <div class="venue-card-img">
-            <div class="venue-card-img-wrap"><img src="image/bookRoom.png" alt="藏书阁" loading="lazy"></div>
-            <div class="venue-card-name">藏书阁</div>
-          </div>
-        </div>
       </div>
 
       <!-- 导航按钮 -->
@@ -743,71 +705,63 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
         <!-- 上午 -->
         <div class="agenda-segment">上午</div>
         <div class="agenda-row">
-          <div class="agenda-col-time">09:00<br>|<br>11:00</div>
+          <div class="agenda-col-time">09:00-11:00</div>
           <div class="agenda-col-body">
-            <div class="agenda-row-title">供应商签到</div>
-            <div class="agenda-row-loc">杭湾书院 · 签到区</div>
-            <div class="agenda-row-desc">供应商签到、自由交流</div>
+            <span class="agenda-row-title">供应商签到</span>
+            <span class="agenda-row-loc">杭湾书院 · 签到区</span>
           </div>
         </div>
         <!-- 中午 -->
         <div class="agenda-segment">中午</div>
         <div class="agenda-row">
-          <div class="agenda-col-time">11:00<br>|<br>13:00</div>
+          <div class="agenda-col-time">11:00-13:00</div>
           <div class="agenda-col-body">
-            <div class="agenda-row-title">午餐</div>
-            <div class="agenda-row-loc">幸福里酒店 · 餐厅</div>
-            <div class="agenda-row-desc">自助餐、自由交流</div>
+            <span class="agenda-row-title">午餐</span>
+            <span class="agenda-row-loc">幸福里酒店 · 餐厅</span>
           </div>
         </div>
         <!-- 下午 -->
         <div class="agenda-segment">下午</div>
         <div class="agenda-row">
-          <div class="agenda-col-time">13:00<br>|<br>15:30</div>
+          <div class="agenda-col-time">13:00-15:30</div>
           <div class="agenda-col-body">
-            <div class="agenda-row-title">分场研讨</div>
-            <div class="agenda-row-loc">杭湾书院 · 会议室</div>
-            <div class="agenda-row-desc">企业高层与供应商代表分组六大分会场深度对话</div>
+            <span class="agenda-row-title">分场研讨</span>
+            <span class="agenda-row-loc">杭湾书院 · 会议室</span>
           </div>
         </div>
         <div class="agenda-row">
-          <div class="agenda-col-time">15:30<br>|<br>15:50</div>
+          <div class="agenda-col-time">15:30-15:50</div>
           <div class="agenda-col-body">
-            <div class="agenda-row-title">茶歇</div>
-            <div class="agenda-row-loc">杭湾书院 · 休息区</div>
-            <div class="agenda-row-desc">茶歇及自由交流、展区参观</div>
+            <span class="agenda-row-title">茶歇</span>
+            <span class="agenda-row-loc">杭湾书院 · 休息区</span>
           </div>
         </div>
         <div class="agenda-row">
-          <div class="agenda-col-time">15:50<br>|<br>16:00</div>
+          <div class="agenda-col-time">15:50-16:00</div>
           <div class="agenda-col-body">
-            <div class="agenda-row-title">主会场入场</div>
-            <div class="agenda-row-loc">杭湾书院 · 有道讲堂</div>
-            <div class="agenda-row-desc">主会场入场</div>
+            <span class="agenda-row-title">主会场入场</span>
+            <span class="agenda-row-loc">杭湾书院 · 有道讲堂</span>
           </div>
         </div>
         <div class="agenda-row">
-          <div class="agenda-col-time">16:00<br>|<br>16:20</div>
+          <div class="agenda-col-time">16:00-16:20</div>
           <div class="agenda-col-body">
-            <div class="agenda-row-title">供应链工作规划</div>
-            <div class="agenda-row-loc">杭湾书院 · 有道讲堂</div>
-            <div class="agenda-row-desc">回顾半年度合作成果，年度战略方向与供应链规划发布</div>
+            <span class="agenda-row-title">供应链工作规划</span>
+            <span class="agenda-row-loc">杭湾书院 · 有道讲堂</span>
           </div>
         </div>
         <div class="agenda-row">
-          <div class="agenda-col-time">16:20<br>|<br>16:40</div>
+          <div class="agenda-col-time">16:20-16:40</div>
           <div class="agenda-col-body">
-            <div class="agenda-row-title">研发规划暨会议总结</div>
-            <div class="agenda-row-loc">杭湾书院 · 有道讲堂</div>
-            <div class="agenda-row-desc">研发规划发布、会议总结</div>
+            <span class="agenda-row-title">研发规划暨会议总结</span>
+            <span class="agenda-row-loc">杭湾书院 · 有道讲堂</span>
           </div>
         </div>
         <div class="agenda-row">
-          <div class="agenda-col-time">17:00<br>|<br>19:00</div>
+          <div class="agenda-col-time">17:00-19:00</div>
           <div class="agenda-col-body">
-            <div class="agenda-row-title">晚餐</div>
-            <div class="agenda-row-loc">幸福里酒店 · 餐厅</div>
-            <div class="agenda-row-desc">晚宴、自由交流</div>
+            <span class="agenda-row-title">晚餐</span>
+            <span class="agenda-row-loc">幸福里酒店 · 餐厅</span>
           </div>
         </div>
       </div>
@@ -823,7 +777,7 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
         <div class="notice-card">
           <svg class="icon-svg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           <h4>参会人员要求</h4>
-          <p>请贵司至少安排<span class="notice-highlight">一位高级管理人员</span>到场，具体为<span class="notice-highlight">董事长或总经理</span>。如无法出席或参会人员变更，须提前与会务组沟通。会议期间请着<span class="notice-highlight">商务正装或商务休闲装</span>，展现企业专业形象。</p>
+          <p>本次会议为高层战略交流会议，诚邀贵司<span class="notice-highlight">负责人（企业老板）本人</span>拨冗出席。为保障高层高效磋商，本次会议<span class="notice-highlight">不建议委派其他人员</span>代为参会。会议期间请着<span class="notice-highlight">商务正装或商务休闲装</span>。</p>
         </div>
         <div class="notice-card">
           <svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
@@ -858,7 +812,7 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
           <li>到场负责人姓名</li>
           <li>到场负责人职位</li>
           <li>负责人手机号</li>
-          <li>参会人数</li>
+          <li>参会人数（默认1人，特殊情况联系会务组）</li>
           <li>用餐 / 住宿需求</li>
         </ul>
         <a class="btn-primary" href="https://wj.qq.com/s2/27374146/040e/" target="_blank" rel="noopener" id="regBtn">
@@ -930,14 +884,14 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
       <div class="contact-list">
         <div class="contact-card">
           <svg class="icon-svg" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <h4>王 工</h4>
+          <h4>王琴</h4>
           <div class="contact-sub">会务联系人</div>
           <a class="contact-phone" href="tel:13566070860">135 6607 0860</a>
           <a class="btn-call" href="tel:13566070860">一键拨号</a>
         </div>
         <div class="contact-card">
           <svg class="icon-svg" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <h4>黄经理</h4>
+          <h4>黄谊花</h4>
           <div class="contact-sub">会务联系人</div>
           <a class="contact-phone" href="tel:15988632027">159 8863 2027</a>
           <a class="btn-call" href="tel:15988632027">一键拨号</a>
@@ -994,7 +948,7 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
   }
 
   // ====== Countdown ======
-  var target = new Date('2026-08-21T08:30:00+08:00');
+  var target = new Date('2026-08-21T09:00:00+08:00');
   function updateCountdown() {
     var now = new Date();
     var diff = target - now;
