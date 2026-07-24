@@ -590,6 +590,31 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
   .fixed-logo { top: 12px; left: 16px; font-size: 11px; }
 }
 
+/* ========== Lightbox ========== */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.85);
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.lightbox.open { display: flex; }
+.lightbox img {
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+  border-radius: 8px;
+  z-index: 1;
+  animation: lbFadeIn 0.25s ease-out;
+}
+@keyframes lbFadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
 /* ========== Reduced Motion ========== */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -662,9 +687,7 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
           <div style="width:4px;height:18px;background:var(--gold);border-radius:2px;"></div>
           <span style="font-size:16px;font-weight:700;">会场平面图</span>
         </div>
-        <a href="image/pingmian.png" target="_blank" style="display:block;cursor:pointer;">
-          <img src="image/pingmian.png" alt="会场平面图" style="width:100%;max-width:600px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:block;margin:0 auto;" loading="lazy">
-        </a>
+        <img src="image/pingmian.png" alt="会场平面图" onclick="openLightbox(this.src)" style="width:100%;max-width:600px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:block;margin:0 auto;cursor:pointer;" loading="lazy">
       </div>
 
       <!-- 时间信息 -->
@@ -918,6 +941,11 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
 
 </div>
 
+<!-- ====== Lightbox ====== -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img src="" alt="会场平面图" id="lightboxImg">
+</div>
+
 <!-- ====== JavaScript ====== -->
 <script>
 (function() {
@@ -984,6 +1012,17 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
   }
   updateCountdown();
   setInterval(updateCountdown, 1000);
+
+  // ====== Lightbox ======
+  window.openLightbox = function(src) {
+    document.getElementById('lightboxImg').src = src;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+  window.closeLightbox = function() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  };
 
   // ====== Intersection Observer ======
   var observer = new IntersectionObserver(function(entries) {
