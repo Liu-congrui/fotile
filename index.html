@@ -113,11 +113,9 @@ body.light-nav .nav-dot::after { color: #333; }
 /* ========== Fixed Logo ========== */
 .fixed-logo {
   position: fixed; top: 16px; left: 20px; z-index: 100;
-  font-size: 13px; font-weight: 700; letter-spacing: 2px;
-  opacity: 0.7; pointer-events: none;
+  height: 32px; width: auto;
+  opacity: 0.85; pointer-events: none;
 }
-body.dark-nav .fixed-logo { color: rgba(255,255,255,0.7); }
-body.light-nav .fixed-logo { color: rgba(26,26,26,0.6); }
 
 /* ========== SVG Icons ========== */
 .icon-svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
@@ -630,7 +628,7 @@ body.scrolled .scroll-hint { opacity: 0; pointer-events: none; }
 
 <!-- ====== Fixed Navigation ====== -->
 <nav class="fixed-nav" id="navDots" aria-label="页面导航"></nav>
-<div class="fixed-logo">FOTILE 方太</div>
+<img class="fixed-logo" src="image/logo.png" alt="FOTILE 方太">
 
 <!-- ====== Scroll Container ====== -->
 <div class="scroll-container" id="scrollContainer">
